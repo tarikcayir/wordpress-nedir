@@ -1,89 +1,238 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="tr">
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="wordpress-nedir : 28 Nisan Çarşamba İstanbul Yakacık Teknik Lisesinde Bilişim Bölümü 3. sınıf öğrencilerine, sunduğum sunum." />
+		<head>
+		<meta charset="utf-8">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+		<title>WordPress Nedir?</title>
 
-    <title>wordpress-nedir</title>
-  </head>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-  <body>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/tarikcayir/wordpress-nedir">View on GitHub</a>
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
 
-          <h1 id="project_title">wordpress-nedir</h1>
-          <h2 id="project_tagline">28 Nisan Çarşamba İstanbul Yakacık Teknik Lisesinde Bilişim Bölümü 3. sınıf öğrencilerine, sunduğum sunum.</h2>
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/tarikcayir/wordpress-nedir/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/tarikcayir/wordpress-nedir/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+			function bookAlert() {
+				alert("Yakında dedim ama sen yine bir umutla bu tuşa bastın  :( Elimden geldiğince hızlı bitirmeye gayret ediyorum. tarikcayir.com üzerinden benimle iletişime geçip, kitap için önerilerde bulunabilirsin ");
+			}
+		</script>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+	<body>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+		<div class="reveal">
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+			<div class="slides">
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+				<section data-background-transition="zoom" data-background="#006f99">
+					<h1 style="font-size:110px;">HOŞ GELDİNİZ</h1>
+				</section>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+				<section data-background="#006f99">
+					<h1 style="font-size:110px;">WORDPRESS NEDİR?</h1><br/>
+					<h6>
+						<a href="http://tarikcayir.com">Tarık ÇAYIR</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://momoth.com">(Momoth)</a><br/>
+						<a href="http://wp-tr.org">WordPress Türkiye</a>
+					</h6>
+				</section>
+				
+				<section>
+					<section data-background="#006f99">
+						<h2>Kimim ben?</h2>
+						<p>
+							Kurucu / WordPress Geliştirici - <a href="http://momoth.com">Momoth</a>
+						</p>
+						<br>
+						<p class="fragment">
+							Yazar - <a href="http://www.wpnotlari.com">WPNotları</a>
+						</p>
+						<br>
+						<p class="fragment">
+							Sosyal Medya ve Organizasyon Sorumlusu - <a href="http://wp-tr.org">WP Türkiye</a>
+						</p>
+						<br>
+						<p class="fragment">
+							<a href="http://twitter.com/tarikcayir">@tarikcayir</a>
+						</p>
+					</section>
+					<section data-background="#006f99">
+						<h3>Momoth'da neler yapıyoruz?</h3>
+						<p class="fragment">
+							WordPress Çözümleri
+						</p>
+						<br/>
+						<ul>
+							<li class="fragment">WP Eklenti Yazıyoruz</li>
+							<li class="fragment">WP Tema Yapıyoruz</li>
+							<li class="fragment">WP Ölçeklenebilirlik</li>
+							<li class="fragment">WP Danışmanlığı</li>
+							<li class="fragment">WP Eğitimleri</li>
+							<li class="fragment">WP Rehberi (E-Kitap)</li>
+						</ul>
+					</section>
+				</section>
+				
+				<section>
+					<section data-background="#006f99">
+						<h2>WordPress</h2>
+						<p>
+							WordPress, dünyada en çok kullanılan içerik yönetim sistemidir, açık kaynaklı ve ücretsiz olarak dağıtılmaktadır.
+						</p>
+						<br/>
+						<ul>
+							<li class="fragment">PHP ile MySQL kullanıyor (ve JS kütüphaneleri)</li>
+							<li class="fragment">Dünya da yüzbinlerce geliştiricisi var, sizde olabilirsiniz :)</li>
+							<li class="fragment">Web'in %22.3 'ünü oluşturuyor, her 5 siteden birisi WP</li>
+							<li class="fragment">Her sektörde kolaylıkla kullanabilirsiniz. Kişisel, Kurumsal, Kamusal, Ticari vb.</li>
+							<li class="fragment">Bünyesinde 31,309 eklentisi var (<a href="http://wordpress.org">wordpress.org</a>)</li>
+							<li class="fragment">Bünyesinde 2,531 teması var (<a href="http://wordpress.org">wordpress.org</a>)</li>
+							<li class="fragment">GPLv2 lisansı kapsamında ve tamamen ücretsiz!</li>
+						</ul>
+						<br/>
+					</section>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+					<section data-background="#006f99">
+						<h3>WordPress'in Dünya da Kullanımı</h3>
+						<p class="fragment">
+							Dünya çapında 60+ Milyon web sitesi WP kullanıyor. 
+						</p>
+						<br/>
+						<p class="fragment">
+							Sadece 3.9 versiyonu şuan 19,300,000+ <a href="http://wordpress.org/download/counter/">kere</a> indirilmeye/güncellenmeye devam ediyor.
+						</p>
+						<br/>
+						<p class="fragment">Örnek siteler;</p>
+						<ul>
+							<li class="fragment"><a href="http://www.time.com">time.com</a></li>
+							<li class="fragment"><a href="http://www.007.com">007.com</a></li>
+							<li class="fragment"><a href="http://www.coca-cola.fr">coca-cola.fr</a></li>
+							<li class="fragment"><a href="http://www.justinbiebermusic.com">justinbiebermusic.com</a></li>
+						</ul>
+					</section>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+					<section data-background="#006f99">
+						<h3>WordPress'in Türkiye de Kullanımı</h3>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+						<p class="fragment">3.8 sürümü "Türkçe" paketi 850,000+ kere indirildi.</p>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+						<p class="fragment">3.9 sürümü "Türkçe" paketi 405,000+ kere indirildi.</p>	
+						<br/>						
+						<p class="fragment">Örnek siteler;</p>
+						<ul>
+							<li class="fragment"><a href="http://www.tamek.com.tr">tamek.com.tr</a></li>
+							<li class="fragment"><a href="http://blog.microsoft.com.tr">blog.microsoft.com.tr</a></li>
+							<li class="fragment"><a href="http://blog.gittigidiyor.com/">blog.gittigidiyor.com</a></li>
+							<li class="fragment"><a href="http://www.elitcikolata.com.tr">elitcikolata.com.tr</a></li>
+							<li class="fragment">ve 59,999,994 web sitesi..</li>	
+						</ul>
+					</section>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
+					<section data-background="#006f99">
+						<h3>Türkiye'de 900.000'dan fazla aktif <br/>WordPress kullanıcısının olduğunu <br/>söyleyebiliriz*</h3><br/>
+						<p class="fragment">
+							Lider geliştirici <a href="https://twitter.com/nacin">@nacin</a>'ın yeni istatistikler sayfasını yayına almasını bekliyoruz :)
+						</p>
+						<p class="fragment"><br/>
+							Kaynak: <a href="tr.wordpress.org">tr.wordpress.org</a>
+						</p>
+					</section>	
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">wordpress-nedir maintained by <a href="https://github.com/tarikcayir">tarikcayir</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+				</section>
 
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-11045607-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+				<section>
+					<section data-background="#006f99">
+						<h3>Peki Biz WordPress Türkiye Olarak Ne Yapıyoruz?</h3>
+						<br/>
+						<ul>
+							<li class="fragment">Türkçe çevirilerini yapıp Türkçe paketlerini hazırlıyoruz</li>
+							<li class="fragment">WP Günleri etkinliklerini düzenliyoruz</li>
+							<li class="fragment">WP Kahve Buluşmalarını (İstanbul, Ankara) düzenliyoruz</li>
+							<li class="fragment">WP konusunda yardıma ihtiyacı olan kişilere sosyal medya hesaplarımızdan yardımcı oluyoruz 
+							<small><a href="https://twitter.com/WP_Turkiye">Twitter</a></small>  
+							<small>-</small>
+							<small><a href="https://www.facebook.com/WPTurkiye">Facebook</a></small></li>
+						</ul>
+					</section>
+				</section>
 
+				<section>
+					<section data-background="#006f99">
+						<h3>Bonus</h3>
+						<br/>
+						<p>
+							WordPress Kaynakları;
+						</p>
+						<ul>
+							<li><a href="http://www.wp-tr.org/wp-content/uploads/2011/05/wp-rehberi-v3.pdf">WP Rehberi 3.0 (Ücretsiz)</a></li>
+							<li><a href="http://www.dikeyeksen.com/products/wordpress">WordPress Kitabı</a></li>							
+							<li><a id="wp-book" href="#" onclick="bookAlert()">WordPress Rehberi (E-Kitap, Ücretsiz. Yakında :)</a></li>
+						</ul>
+						<br/>						
+						<br/>
+						<p class="fragment">
+							2. Kısım							
+						</p>
+					</section>
+				</section>
 
-  </body>
+				<section data-background-transition="zoom" data-background="img/hadi-bitirelim-su-isi.png">
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
 </html>
